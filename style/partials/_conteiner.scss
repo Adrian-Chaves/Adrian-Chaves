@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "cono   cono    frutilla    chocolate"
+      "cono   cono    dulce       menta";
+  
+    > div {
+      display: grid;
+      place-items: bottom;
+    }
+  
+    .cono, .frutilla, .chocolate, .dulce, .menta {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+    }
+  
+    .cono {
+      background-image: url(../img/cono.jpg);
+      grid-area: cono;
+      background-color: $mainColor;
+    }
+  
+    .frutilla {
+      background-image: url(../img/frutilla.png);
+      grid-area: frutilla;
+      background-color: $mainColor;
+    }
+  
+    .chocolate {
+      background-image: url(../img/chocolate.png);
+      grid-area: chocolate;
+      background-color: $mainColor;
+    }
+  
+    .dulce {
+      background-image: url(../img/dulce.png);
+      grid-area: dulce;
+      background-color: $mainColor;
+    }
+  
+    .menta {
+      background-image: url(../img/menta.png);
+      grid-area: menta;
+      background-color: $mainColor;
+    }
+  }
